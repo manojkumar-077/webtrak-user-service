@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/webtrak_user_db
+    username: postgres
+    password: M@noj+07
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: my-super-secret-webtrak-jwt-key-123456789012345
+  expiration: 86400000
